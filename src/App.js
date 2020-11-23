@@ -6,17 +6,16 @@ import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Container } from "reactstrap";
+import styled from "styled-components";
 
 
 function App() {
   return (
     <Router>
-        <Header />
-        {/* <Container>          
+        <Header /> 
           <Route exact path="/portfolio" component={ Portfolio } />
           <Route exact path="/contact" component={ Contact } />
-          <Route path="/" component={ About } />
-        </Container> */}
+          <Route exact path={["/", "/about"]} component={ About } />
         <Footer />
 
     </Router>

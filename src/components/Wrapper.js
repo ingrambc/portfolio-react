@@ -6,6 +6,7 @@ const main = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: linear-gradient(to bottom right, rgb(187, 243, 187), rgb(44, 141, 44));
 `;
 
 function Wrapper(props) {
