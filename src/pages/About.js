@@ -51,10 +51,12 @@ const About = () => {
         </Col>
         <Col md="4" id="colunm">
         <h2>Skills</h2>
-          <p>Technologies: React, JavaScript, Java, C++, HTML, CSS, Node, Express, SQL,
+          <h4>Technologies:</h4>
+          <p>React, JavaScript, Java, C++, HTML, CSS, Node, Express, SQL,
             MySQL, Oracle 12c, MongDB, Passport, Visual Studio Code, NetBeans, Git, Heroku, AtlasDB
           </p>
-          <p>Experience: I have held many positions in my long work history, from labor to upper
+          <h4>Experience:</h4>
+          <p>I have held many positions in my long work history, from labor to upper
             management. As Area manager I managed and assigned workloads for my crew of 16, took care of customer problems, and 
             troublshooted technical issues.  As Vice-Chair of a small non-Profit, I have managed budgets, solved conflicts, 
             and grown the organization. 

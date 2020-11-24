@@ -5,17 +5,17 @@ import Portfolio from "./pages/Portfolio"
 import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { Container } from "reactstrap";
-import styled from "styled-components";
-
+import Wrapper from "./components/Wrapper";
 
 function App() {
   return (
     <Router>
-        <Header /> 
+        <Header />
+        <Wrapper>
           <Route exact path="/portfolio" component={ Portfolio } />
           <Route exact path="/contact" component={ Contact } />
           <Route exact path={["/", "/about"]} component={ About } />
+        </Wrapper> 
         <Footer />
 
     </Router>

@@ -4,7 +4,6 @@ import Project from "../components/Project";
 import styled from "styled-components";
 
 const StyledPortfolio = styled.div`
-  max-width: 580px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +11,10 @@ const StyledPortfolio = styled.div`
   justify-items: center;
   background-image: linear-gradient(rgb(187, 243, 187), rgb(44, 141, 44));
   padding:5%;
+  
+  h1{
+    text-decoration: underline;
+   }
 `;
 
 
@@ -39,7 +42,6 @@ function Portfolio() {
           />
         </Col>
       </Row>
-      <hr />
       <Row>
         <Col md="6">
           <Project
@@ -58,8 +60,7 @@ function Portfolio() {
           />
         </Col>
       </Row>
-      <hr />
-      <Row>
+       <Row>
         <Col md="6">
           <Project
             name="Employee Directory"
