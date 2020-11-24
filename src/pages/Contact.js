@@ -3,21 +3,35 @@ import {Col, Row, Form, Label, Input, FormGroup} from "reactstrap";
 import styled from "styled-components";
 
 const StyledContact = styled.div`
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-items: center;
 
+  #column{
+    align-content: center;
+    text-align: center;
+  };
+
+  .h2{
+    color: rgb(44, 141, 44);
+  };
 `;
 
 const Contact = () => {
   return(
     <StyledContact>
       <Row>
-        <Col md="4">
+        <Col Col md="4" id="column">
           <h2><a href="mailto:ingrambrianholly@hotmail.com">Email</a></h2>
         </Col>
-        <Col md="4">
+        <Col Col md="4" id="column">
           <h2><a href="https://www.linkedin.com/in/brian-ingram-90b40b126/">LinkedIn</a></h2>
         </Col>
-        <Col md>
-          <h2 md="4"><a href="">Resume</a></h2>
+        <Col Col md="4" id="column">
+          <h2>Resume</h2>
         </Col>
       </Row>
     </StyledContact>

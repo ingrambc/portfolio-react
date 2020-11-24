@@ -12,7 +12,7 @@ import styled from "styled-components";
 
 const StyledNav = styled.div`
   .navbar {
-  color:rgb(44, 141, 44); ;
+  color:rgb(44, 141, 44);
   background-color: rgb(187, 243, 187);
   margin: 0;
   padding: 0;
@@ -28,6 +28,7 @@ const StyledNav = styled.div`
     font-weight: bolder;
     font-size: 26px;
   }
+  
 `;
 
 const Example = (props) => {
