@@ -1,14 +1,14 @@
 import React from "react";
-import {Col, Row, Form, Label, Input, FormGroup} from "reactstrap";
+import {Col, Row} from "reactstrap";
 import styled from "styled-components";
 
 const StyledContact = styled.div`
-  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   justify-items: center;
+  background-image: linear-gradient(rgb(187, 243, 187), rgb(44, 141, 44));
 
   #column{
     align-content: center;
@@ -18,6 +18,13 @@ const StyledContact = styled.div`
   .h2{
     color: rgb(44, 141, 44);
   };
+
+  a:link, a:visited{
+    color: rgb(187, 243, 187);
+  }
+  a:hover, a:active{
+    color: rgb(187, 200, 187);
+  }
 `;
 
 const Contact = () => {
@@ -25,37 +32,19 @@ const Contact = () => {
     <StyledContact>
       <Row>
         <Col Col md="4" id="column">
+        <img src="images/email.png" alt="email" />
           <h2><a href="mailto:ingrambrianholly@hotmail.com">Email</a></h2>
         </Col>
         <Col Col md="4" id="column">
+          <img src="images/linkedin.png" alt="Linked In" />
           <h2><a href="https://www.linkedin.com/in/brian-ingram-90b40b126/">LinkedIn</a></h2>
         </Col>
         <Col Col md="4" id="column">
-          <h2>Resume</h2>
+          <img src="images/resume.png" alt="resume" />
+          <h2><a href="https://www.linkedin.com/in/brian-ingram-90b40b126/">Resume</a></h2>
         </Col>
       </Row>
     </StyledContact>
-
-
-
-    // <StyledContact>
-    //   <Form class="form mx-auto" action="mailto:ingrambrianholly@hotmail.com" method="post" enctype="text/plain">
-    //     <FormGroup class="form-group">
-    //       <Label for="nameInput">Name</Label>
-    //       <Input type="name" class="form-control" id="nameInput" placeholder="Jane Doe"/>
-    //     </FormGroup>
-    //     <FormGroup class="form-group mx-auto">
-    //       <Label for="emailInput">Email address</Label>
-    //       <Input type="email" class="form-control" id="emailInput" placeholder="name@example.com"/>
-    //     </FormGroup>
-    //     <FormGroup class="form-group">
-    //       <Label for="messageText">Message</Label>
-    //       <Input type="textarea" class="form-control" id="messageText" rows="8"/>
-    //     </FormGroup>
-    //     <Input type="submit" value="Send"/>
-    //     <Input type="reset" value="Reset"/>
-    //   </Form>
-    // </StyledContact>
   );
 };
 
