@@ -2,6 +2,11 @@ import React from "react";
 import {Col, Row} from "reactstrap";
 import styled from "styled-components";
 
+//assets
+import LIIcon from "../images/linkedin.png";
+import EmailIcon from "../images/email.png";
+import ResumeIcon from "../images/resume.png";
+
 const StyledContact = styled.div`
   display: flex;
   justify-content: center;
@@ -32,15 +37,15 @@ const Contact = () => {
     <StyledContact>
       <Row>
         <Col Col md="4" id="column">
-        <img src="images/email.png" alt="email" />
+        <img src={EmailIcon} alt="email" />
           <h2><a href="mailto:ingrambrianholly@hotmail.com">Email</a></h2>
         </Col>
         <Col Col md="4" id="column">
-          <img src="images/linkedin.png" alt="Linked In" />
+          <img src={LIIcon} alt="Linked In" />
           <h2><a href="https://www.linkedin.com/in/brian-ingram-90b40b126/">LinkedIn</a></h2>
         </Col>
         <Col Col md="4" id="column">
-          <img src="images/resume.png" alt="resume" />
+          <img src={ResumeIcon} alt="resume" />
           <h2><a href="https://www.linkedin.com/in/brian-ingram-90b40b126/">Resume</a></h2>
         </Col>
       </Row>

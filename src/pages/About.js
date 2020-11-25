@@ -2,6 +2,11 @@ import React from "react";
 import {Col, Row} from "reactstrap";
 import styled from "styled-components";
 
+//assets
+import ProfilePic from "../images/Brian.jpg"
+import RegisIcon from "../images/regisT1.png"
+import DUIcon from "../images/duT1.png"
+
 const StyledAbout = styled.div`
   max-width: 100%;
   display: flex;
@@ -38,13 +43,13 @@ const About = () => {
             no experience to State Trainer in a technical utility field in 15 months.</p>
         </Col>
         <Col md="4" id="colunm">
-          <img src="images/Brian.jpg" alt="portrait of Brian" />
+          <img src={ProfilePic} alt="portrait of Brian" />
           <h2>Education</h2>
-          <h3><img src="images/regisT1.png" alt="Regis Shield"/> Regis University</h3>
+          <h3><img src={RegisIcon} alt="Regis Shield"/> Regis University</h3>
           <p>BS in Computer Science</p>
           <p>Graduated May 2020, 3.0 GPA</p>
           <br></br>
-          <h3><img src="images/duT1.png" alt="DU Shield"/>Denver University</h3>
+          <h3><img src={DUIcon} alt="DU Shield"/>Denver University</h3>
           <p>Full Stack Web Development</p>
           <p>Coding Bootcamp</p>
           <p>Graduation December 2020</p>

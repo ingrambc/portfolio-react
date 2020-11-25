@@ -3,6 +3,14 @@ import { Row, Col } from "reactstrap";
 import Project from "../components/Project";
 import styled from "styled-components";
 
+//assets
+import CCYAImg from "../images/ccya.png";
+import BurgerImg from "../images/burger.png";
+import NearBeerImg from "../images/craft-beer.png";
+import EmployeeImg from "../images/employee.png";
+import WatchThisImg from "../images/WatchThis.png";
+import WeatherImg from "../images/weather.png";
+
 const StyledPortfolio = styled.div`
   display: flex;
   justify-content: center;
@@ -28,7 +36,7 @@ function Portfolio() {
         <Col md="6">
           <Project
             name="CCYA"
-            img="/images/ccya.png"
+            img={CCYAImg}
             github="https://github.com/TLCroatt/ccya.git"
             deploy="#"
           />
@@ -36,7 +44,7 @@ function Portfolio() {
         <Col md="6">
           <Project
             name="Whatch This"
-            img="/images/WatchThis.png"
+            img={WatchThisImg}
             github="https://github.com/ingrambc/WatchThis.git"
             deploy="https://young-inlet-91954.herokuapp.com/"
           />
@@ -45,8 +53,8 @@ function Portfolio() {
       <Row>
         <Col md="6">
           <Project
-            name="Near Beers"
-            img="/images/craft-beer.png"
+            name="Near Beer"
+            img={NearBeerImg}
             github="https://github.com/ingrambc/Near-Beer.git"
             deploy="https://ingrambc.github.io/Near-Beer/"
           />
@@ -54,7 +62,7 @@ function Portfolio() {
         <Col md="6">
           <Project
             name="Weather Dashboard"
-            img="/images/weather.png"
+            img={WeatherImg}
             github="https://github.com/ingrambc/WeatherDashboard.git"
             deploy="https://ingrambc.github.io/WeatherDashboard/"
           />
@@ -64,7 +72,7 @@ function Portfolio() {
         <Col md="6">
           <Project
             name="Employee Directory"
-            img="/images/employee.png"
+            img={EmployeeImg}
             github="https://github.com/ingrambc/react-employee-dir.git"
             deploy="https://ingrambc.github.io/react-employee-dir/"
           />
@@ -72,7 +80,7 @@ function Portfolio() {
         <Col md="6">
           <Project
             name="Burgers"
-            img="/images/burger.png"
+            img={BurgerImg}
             github="https://github.com/ingrambc/burger.git"
             deploy="https://whispering-crag-08713.herokuapp.com/"
           />
