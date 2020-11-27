@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import {
   Collapse,
   Navbar,
@@ -31,7 +32,7 @@ const StyledNav = styled.div`
   
 `;
 
-const Example = (props) => {
+const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
@@ -43,13 +44,13 @@ const Example = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/">About</NavLink>
+              <NavLink tag={Link} to="/">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/portfolio">Portfoilio</NavLink>
+              <NavLink tag={Link} to="/portfolio">Portfoilio</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/contact">Contact</NavLink>
+              <NavLink tag={Link} to="/contact">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
@@ -58,4 +59,4 @@ const Example = (props) => {
   );
 }
 
-export default Example;
+export default Header;
