@@ -46,7 +46,7 @@ const Contact = () => {
         </Col>
         <Col Col md="4" id="column">
           <img src={ResumeIcon} alt="resume" />
-          <h2><a href="https://www.linkedin.com/in/brian-ingram-90b40b126/">Resume</a></h2>
+          <h2><a href="https://docs.google.com/document/d/16t5NgbHkWmjuNCYNI0W-pslgtlpI_DQqqsCBfpXujUE/edit?usp=sharing">Resume</a></h2>
         </Col>
       </Row>
     </StyledContact>

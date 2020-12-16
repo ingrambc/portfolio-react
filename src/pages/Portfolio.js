@@ -38,7 +38,7 @@ function Portfolio() {
             name="CCYA"
             img={CCYAImg}
             github="https://github.com/TLCroatt/ccya.git"
-            deploy="#"
+            deploy="https://ccya.herokuapp.com/"
           />
         </Col>
         <Col md="6">
