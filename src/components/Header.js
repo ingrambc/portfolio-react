@@ -39,12 +39,12 @@ const Header = (props) => {
   return (
     <StyledNav>
       <Navbar color="rgb(44, 141, 44)" light expand="md">
-        <NavbarBrand tag={Link} to="/">Brian Ingram</NavbarBrand>
+        <NavbarBrand tag={Link} to="/portfolio-react">Brian Ingram</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink tag={Link} to="/">About</NavLink>
+              <NavLink tag={Link} to="/about">About</NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to="/portfolio">Portfoilio</NavLink>
