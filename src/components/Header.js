@@ -44,13 +44,13 @@ const Header = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink tag={Link} to="/about">About</NavLink>
+              <NavLink tag={Link} to="/portfolio-react/about">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/portfolio">Portfoilio</NavLink>
+              <NavLink tag={Link} to="/portfolio-react/portfolio">Portfoilio</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/contact">Contact</NavLink>
+              <NavLink tag={Link} to="/portfolio-react/contact">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
